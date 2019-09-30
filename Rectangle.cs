@@ -1,25 +1,15 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+public class Rectangle{
+    private int width;
+    private int length;
 
-namespace  basic_shapes
-{
-    class Program
+    public Rectangle(int width,int length)
     {
-        static void Main(string[] args)
-        {
-           double height = 0.0;
-           double width = 0.0;
-           double area = 0.0;
-            area = height * width;
-        }
+        this.width=width;
+        this.length=length;
+        
+    }
 
-        GetArea()
-        {
-           Console.WriteLine("Area of rectangle 1:", area)  ;
-        }
+    public int GetArea(){
+        return this.width*this.length;
     }
 }
-
